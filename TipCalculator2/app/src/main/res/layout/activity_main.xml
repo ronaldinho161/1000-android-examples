@@ -13,67 +13,89 @@
     android:useDefaultMargins="true">
 
     <EditText
+        android:id="@+id/amountEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
         android:digits="0123456789"
-        android:id="@+id/amountEditText"
+        android:maxLength="6"
         android:layout_column="0"
         android:layout_columnSpan="2" />
 
     <TextView
-        android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/amountTextView"
+        android:text="@string/enter_amount"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
         android:layout_column="0"
-        android:layout_columnSpan="2" />
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/amountBackground"
+        android:padding="@dimen/text_view_padding"
+        android:elevation="@dimen/elevation" />
 
     <TextView
-        android:text="TextView"
+        android:id="@+id/percentTextView"
+        android:text="@string/tip_percentage"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_column="0"
-        android:id="@+id/percentTextView" />
+        android:layout_gravity="center_vertical|right" />
 
     <SeekBar
+        android:id="@+id/percentSeekBar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/seek_bar_height"
         android:layout_column="1"
-        android:id="@+id/percentSeekBar" />
+        android:progress="15"
+        android:layout_gravity="fill_horizontal"
+        android:max="30"/>
 
     <TextView
-        android:text="TextView"
+        android:id="@+id/tipLabelTextView"
+        android:text="@string/tip"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_column="0"
-        android:id="@+id/tipLabelTextView" />
+        android:layout_gravity="right" />
 
     <TextView
-        android:text="TextView"
+        android:id="@+id/tipTextView"
+        android:text=""
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_column="1"
-        android:id="@+id/tipTextView" />
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/result_background"
+        android:gravity="center"
+        android:elevation="@dimen/elevation"
+        android:padding="@dimen/text_view_padding" />
 
     <TextView
-        android:text="TextView"
+        android:id="@+id/totalLabelTextView"
+        android:text="Total"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_column="0"
-        android:id="@+id/totalLabelTextView" />
+        android:layout_gravity="right" />
 
     <TextView
-        android:text="TextView"
+        android:id="@+id/totalTextView"
+        android:text=""
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_column="1"
-        android:id="@+id/totalTextView" />
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/result_background"
+        android:gravity="center"
+        android:padding="@dimen/text_view_padding"
+        android:elevation="@dimen/elevation" />
 </GridLayout>
