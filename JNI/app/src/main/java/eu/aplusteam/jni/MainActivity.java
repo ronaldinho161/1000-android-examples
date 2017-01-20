@@ -27,9 +27,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // Init native library
-        initJNI();
-
         // Example of a call to a native method
         tv = (TextView) findViewById(R.id.sample_text);
         tv.setText(stringFromJNI());
@@ -66,11 +63,6 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-    /**
-     * A native method that initialize the 'native-lib'
-     */
-    public native void initJNI();
 
     /**
      * A native method that is implemented by the 'native-lib' native library,

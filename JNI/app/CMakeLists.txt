@@ -9,16 +9,20 @@ cmake_minimum_required(VERSION 3.4.1)
 # You can define multiple libraries, and CMake builds it for you.
 # Gradle automatically packages shared libraries with your APK.
 
+include_directories(src/main/../../../Core/)
+file(GLOB SOURCES "src/main/../../../Core/*.cpp")
+
 add_library( # Sets the name of the library.
              native-lib
 
              # Sets the library as a shared library.
-             STATIC
+             SHARED
 
              # Provides a relative path to your source file(s).
              # Associated headers in the same location as their source
              # file are automatically included.
-             src/main/cpp/native-lib.cpp )
+             src/main/cpp/native-lib.cpp ${SOURCES})
+
 
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because system libraries are included in the search path by
