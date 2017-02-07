@@ -10,10 +10,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 
-import eu.aplusteam.mvpii.MainActivity;
+import eu.aplusteam.mvpii.ui.main.MainActivity;
 import eu.aplusteam.mvpii.R;
 import eu.aplusteam.mvpii.business.interfaces.ILoginInteractor;
-import eu.aplusteam.mvpii.eu.aplusteam.mvpii.business.LoginInteractor;
+import eu.aplusteam.mvpii.business.LoginInteractor;
 import eu.aplusteam.mvpii.ui.login.interfaces.LoginContract;
 
 /**

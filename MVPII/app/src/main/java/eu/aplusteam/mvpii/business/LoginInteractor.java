@@ -1,4 +1,4 @@
-package eu.aplusteam.mvpii.eu.aplusteam.mvpii.business;
+package eu.aplusteam.mvpii.business;
 
 import android.os.Handler;
 import android.text.TextUtils;

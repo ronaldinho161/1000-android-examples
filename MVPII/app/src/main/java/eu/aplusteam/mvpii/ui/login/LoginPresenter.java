@@ -1,7 +1,7 @@
 package eu.aplusteam.mvpii.ui.login;
 
 import eu.aplusteam.mvpii.business.interfaces.ILoginInteractor;
-import eu.aplusteam.mvpii.eu.aplusteam.mvpii.business.LoginInteractor;
+import eu.aplusteam.mvpii.business.LoginInteractor;
 import eu.aplusteam.mvpii.ui.login.interfaces.LoginContract;
 
 /**
